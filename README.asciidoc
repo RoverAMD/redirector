@@ -1,0 +1,21 @@
+This is a simple redirect pages generator that I made.
+
+= Usage
+Create a so-called "sitemap" file containing all the redirects in the following format:
+
+[source]
+----
+[alias] > [destination]
+----
+
+Example:
+
+[source]
+----
+example > http://example.com
+foo -> /bar.html
+----
+
+Save it to a plain text file, then run ``sitemap.tcl`` via ``tclsh`` with the name of the file as its only argument.
+
+This will create all the necessary directories in pwd with redirector htmls.
